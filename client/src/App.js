@@ -5,6 +5,7 @@ import "./App.scss";
 
 import CenterBanner from "./components/CenterBanner/CenterBanner";
 import Header from "./components/Header/Header";
+import ShortIntro from "./components/ShortIntro/ShortIntro";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <div>
         <Header />
         <CenterBanner />
+        <ShortIntro />
       </div>
     </motion.div>
   );
