@@ -1,6 +1,9 @@
 import React from "react";
 import "./Header.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const Header = () => {
   return (
     <div className="header">
@@ -9,11 +12,15 @@ const Header = () => {
       </div>
       <div className="header__menu">
         <div className="header__menuList">
-          <a>Home</a>
-          <a>Projects</a>
-          <a>Achievements</a>
-          <a>Blog</a>
-          <a>Contact</a>
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Achievements</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div className="header__hamBurger">
+          <FontAwesomeIcon icon={faBars} />
         </div>
       </div>
     </div>

@@ -22,17 +22,29 @@
 }
 .header__menu a {
   cursor: pointer;
+  text-decoration: none;
+  color: $black;
   margin-right: 1.8em;
 }
 
 .header__menu a:hover {
-  color: #87898d;
+  color: $grey;
   transition-duration: 0.6s;
+}
+
+// Hide the hamburger icon (Desktop and tablet view)
+.header__menu .header__hamBurger {
+  cursor: pointer;
+  display: none;
 }
 
 /* Media Queries */
 @media (max-width: 650px) {
   .header__menu .header__menuList {
     display: none;
+  }
+  .header__menu .header__hamBurger {
+    margin-right: 1em;
+    display: block;
   }
 }
