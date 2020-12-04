@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.banner {
+  //   border: 1px solid #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__avatar {
+  width: 6.25em;
+  height: 6.25em;
+  border: 15px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0.5px #888888;
+}
+
+.banner__avatar:hover {
+  box-shadow: 0px 0px 20px 0.5px #888888;
+  cursor: pointer;
+}
+
+.banner__avatar img {
+  width: 100%;
+}
+
+.banner__title {
+  text-align: center;
+}
+
+.banner__title h1 {
+  font-size: 50px;
+}
+
+.banner__title h1:after {
+  display: block;
+  text-align: center;
+  font-family: $poppinsRegular !important;
+  font-size: 18px;
+  color: #2c3e50;
+  margin-top: 0.5em;
+  content: "Yes, I'm a programmer and I won't fix your computer";
+}

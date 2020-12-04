@@ -1,0 +1,38 @@
+@import "../../App.scss";
+
+.header {
+  display: flex;
+  padding: 0.8em 0 0.8em 0;
+  align-items: center;
+}
+
+.header__logo {
+  flex-grow: 3;
+  margin-left: 0.6em;
+}
+
+.header__logoBold {
+  font-family: $poppinsSemiBold;
+  margin-left: 0.3em;
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 8;
+}
+.header__menu a {
+  cursor: pointer;
+  margin-right: 1.8em;
+}
+
+.header__menu a:hover {
+  color: #87898d;
+  transition-duration: 0.6s;
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .header__menu .header__menuList {
+    display: none;
+  }
+}
