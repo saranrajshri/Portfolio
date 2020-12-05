@@ -58,12 +58,14 @@ const ContactForm = () => {
                 placeholder="Your Name"
                 name="name"
                 onChange={handleChange}
+                value={formData.name}
                 className="contactForm__input"
               />
               <input
                 type="text"
                 placeholder="Your Email"
                 name="email"
+                value={formData.email}
                 onChange={handleChange}
                 className="contactForm__input"
               />
@@ -72,6 +74,7 @@ const ContactForm = () => {
                 placeholder="Enter your message here.."
                 name="description"
                 onChange={handleChange}
+                value={formData.description}
                 className="contactForm__input"
               />
             </div>
