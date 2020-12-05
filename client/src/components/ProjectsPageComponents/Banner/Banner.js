@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 import "./Banner.scss";
 
@@ -13,7 +13,7 @@ import { CustomDivider } from "../..";
 
 const Banner = () => {
   return (
-    <div>
+    <Element name="banner">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -34,7 +34,7 @@ const Banner = () => {
               <motion.div whileHover={{ y: -3 }}>
                 <Link
                   activeClass="active"
-                  to="centerBanner"
+                  to="banner"
                   spy={true}
                   smooth={true}
                   offset={400}
@@ -54,7 +54,7 @@ const Banner = () => {
         </div>
         <CustomDivider />
       </motion.div>
-    </div>
+    </Element>
   );
 };
 

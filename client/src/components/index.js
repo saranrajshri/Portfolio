@@ -10,6 +10,7 @@ import ShortIntro from "./HomePageComponents/ShortIntro/ShortIntro";
 
 // Projects Page Components
 import Banner from "./ProjectsPageComponents/Banner/Banner";
+import ProjectsList from "./ProjectsPageComponents/ProjectsList/ProjectsList";
 
 export {
   AboutMe,
@@ -19,4 +20,5 @@ export {
   Footer,
   ShortIntro,
   Banner,
+  ProjectsList,
 };

@@ -6,7 +6,10 @@ import "./Footer.scss";
 import { Context } from "../../../context/Context";
 import CustomDivider from "../CustomDivider/CustomDivider";
 
-const Footer = () => {
+const Footer = (props) => {
+  const delayDuration =
+    props.delayDuration !== undefined ? props.delayDuration : 3;
+
   const [state] = useContext(Context);
   const [showContent, setContentVisible] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
@@ -24,7 +27,7 @@ const Footer = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: showContent ? 1 : 0 }}
-        transition={{ delay: 3, duration: 2 }}
+        transition={{ delay: delayDuration, duration: 2 }}
       >
         <div className="footer">
           <div className="footer__left"></div>
