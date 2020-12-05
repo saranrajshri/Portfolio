@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@import "../../../App.scss";
 
 .footer {
   margin: 0 1em 0.8em 1em;
@@ -46,4 +46,8 @@
 
 .footer__bottomLinks {
   margin-bottom: 1em;
+}
+
+.footer__tradeMark {
+  color: $darkGrey;
 }

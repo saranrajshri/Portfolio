@@ -10,6 +10,7 @@ const initialState = {
     leetCode: "",
     codeChef: "",
     hackerRank: "",
+    email: "shrisaranraj2001@gmail.com",
   },
 };
 

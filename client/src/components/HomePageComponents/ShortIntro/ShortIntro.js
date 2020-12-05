@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import CustomDivider from "../CustomDivider/CustomDivider";
+import CustomDivider from "../../Global/CustomDivider/CustomDivider";
 import "./ShortIntro.scss";
-import { Context } from "../../context/Context";
+import { Context } from "../../../context/Context";
 
 const ShortIntro = () => {
-  const [state, dispatch] = useContext(Context);
+  const [state] = useContext(Context);
   const [showContent, setContentVisible] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
 
@@ -36,11 +36,19 @@ const ShortIntro = () => {
             <p className="shortIntro__shortText">
               I am currently looking to SDE oportunities. If you want, you can
               view my{" "}
-              <a href={`${state.socialMediaLinks.linkedIn}`} target="_blank">
+              <a
+                href={`${state.socialMediaLinks.linkedIn}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn profile
               </a>
               , download my
-              <a href={`${state.socialMediaLinks.resume}`} target="_blank">
+              <a
+                href={`${state.socialMediaLinks.resume}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 updated resume
               </a>{" "}

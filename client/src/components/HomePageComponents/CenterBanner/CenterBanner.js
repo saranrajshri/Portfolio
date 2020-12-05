@@ -4,7 +4,7 @@ import { Link, Element } from "react-scroll";
 
 import "./CenterBanner.scss";
 
-import AvatarImage from "../../images/avatar.png";
+import AvatarImage from "../../../images/avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import CustomDivider from "../CustomDivider/CustomDivider";
+import CustomDivider from "../../Global/CustomDivider/CustomDivider";
 import "./AboutMe.scss";
 
-import AvatarImage from "../../images/avatar-capped.png";
+import AvatarImage from "../../../images/avatar-capped.png";
 
 const AboutMe = () => {
   const [showContent, setContentVisible] = useState(false);
@@ -72,6 +72,7 @@ const AboutMe = () => {
               </span>{" "}
               and
               <span className="aboutMe__boldText">
+                {" "}
                 Data Structures and Algorithms Knowledge
               </span>
               .

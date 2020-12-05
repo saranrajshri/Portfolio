@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CustomDivider from "../CustomDivider/CustomDivider";
 import "./Footer.scss";
+import { Context } from "../../../context/Context";
+import CustomDivider from "../CustomDivider/CustomDivider";
 
 const Footer = () => {
+  const [state] = useContext(Context);
   const [showContent, setContentVisible] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
 
@@ -30,7 +32,10 @@ const Footer = () => {
             <p className="footer__shortText">
               If you have any questions or just want to say hello, don't
               hesitate to
-              <a href="#"> send an email</a>
+              <a href={`mailto:${state.socialMediaLinks.email}`}>
+                {" "}
+                send an email
+              </a>
             </p>
           </div>
           <div className="footer__right"></div>
@@ -45,7 +50,9 @@ const Footer = () => {
               <a href="#">Blog</a>
               <a href="#">Contact</a>
             </div>
-            Made with <FontAwesomeIcon icon={faHeart} /> Shri Saran Raj
+            <p className="footer__tradeMark">
+              Made with <FontAwesomeIcon icon={faHeart} /> Shri Saran Raj
+            </p>
           </div>
         </center>
       </motion.div>
