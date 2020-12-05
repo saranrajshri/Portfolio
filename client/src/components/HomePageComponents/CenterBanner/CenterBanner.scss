@@ -31,7 +31,7 @@
 }
 
 .banner__title h1 {
-  font-size: 50px;
+  font-size: 3.125em;
 }
 
 .banner__title h1:after {
@@ -58,4 +58,5 @@
   border-radius: 0.5em;
   cursor: pointer;
   outline: none;
+  letter-spacing: 0.1em;
 }

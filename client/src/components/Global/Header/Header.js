@@ -14,7 +14,7 @@ const Header = () => {
         <div className="header__menuList">
           <a href="/">Home</a>
           <a href="/projects">Projects</a>
-          <a href="#">Achievements</a>
+          <a href="/achievements">Achievements</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </div>

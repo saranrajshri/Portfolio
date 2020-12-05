@@ -12,6 +12,11 @@ import ShortIntro from "./HomePageComponents/ShortIntro/ShortIntro";
 import Banner from "./ProjectsPageComponents/Banner/Banner";
 import ProjectsList from "./ProjectsPageComponents/ProjectsList/ProjectsList";
 
+// Achievements Component
+import AchievementsBanner from "./AchievementsPageComponents/Banner/Banner";
+import AchievementsList from "./AchievementsPageComponents/AchievementsList/AchievementsList";
+import SkillsList from "./AchievementsPageComponents/SkilsList/SkillsList";
+
 export {
   AboutMe,
   CenterBanner,
@@ -21,4 +26,7 @@ export {
   ShortIntro,
   Banner,
   ProjectsList,
+  AchievementsBanner,
+  AchievementsList,
+  SkillsList,
 };
