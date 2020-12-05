@@ -23,8 +23,16 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const isValidData = () => {
+    return true;
+  };
+
   const handleSubmit = () => {
-    alert.show("Oh look, an alert!");
+    if (isValidData(formData)) {
+      alert.success("Message Sent");
+    } else {
+      alert.error("Failed to send message");
+    }
   };
   return (
     <div className="contactFormWrapper">

@@ -10,6 +10,10 @@
   flex-grow: 3;
   margin-left: 0.6em;
 }
+.header__logo a {
+  text-decoration: none;
+  color: $black;
+}
 
 .header__logoBold {
   font-family: $poppinsSemiBold;

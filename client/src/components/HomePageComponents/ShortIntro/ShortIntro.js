@@ -63,9 +63,31 @@ const ShortIntro = () => {
             </p>
             <p className="shortIntro__shortText">
               I also do competitive programming. I regularly practice on{" "}
-              <a href={`${state.socialMediaLinks.leetCode}`}>LeetCode</a>,
-              <a href={`${state.socialMediaLinks.codeChef}`}> CodeChef</a>,{" "}
-              <a href={`${state.socialMediaLinks.hackerRank}`}> HackerRank</a>
+              <a
+                href={`${state.socialMediaLinks.leetCode}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                LeetCode
+              </a>
+              ,
+              <a
+                href={`${state.socialMediaLinks.codeChef}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                CodeChef
+              </a>
+              ,{" "}
+              <a
+                href={`${state.socialMediaLinks.hackerRank}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                HackerRank
+              </a>
             </p>
           </div>
           <div className="shortIntro__right"></div>

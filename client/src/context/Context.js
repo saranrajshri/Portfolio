@@ -7,9 +7,9 @@ const initialState = {
     resume: "#",
     linkedIn: "http://linkedin.com/in/saranrajshri",
     github: "http://github.com/saranrajshri",
-    leetCode: "",
-    codeChef: "",
-    hackerRank: "",
+    leetCode: "https://leetcode.com/saranrajshri/",
+    codeChef: "https://www.codechef.com/users/saranrajshri",
+    hackerRank: "https://www.hackerrank.com/shrisaranraj",
     email: "shrisaranraj2001@gmail.com",
   },
   projects: [
