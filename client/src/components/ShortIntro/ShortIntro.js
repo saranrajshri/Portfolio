@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Element } from "react-scroll";
 
 import CustomDivider from "../CustomDivider/CustomDivider";
 import "./ShortIntro.scss";
