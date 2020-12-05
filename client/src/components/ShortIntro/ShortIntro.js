@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Element } from "react-scroll";
 
 import CustomDivider from "../CustomDivider/CustomDivider";
 import "./ShortIntro.scss";
+import { Context } from "../../context/Context";
 
 const ShortIntro = () => {
+  const [state, dispatch] = useContext(Context);
   const [showContent, setContentVisible] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
 
@@ -34,13 +35,22 @@ const ShortIntro = () => {
             </p>
             <p className="shortIntro__shortText">
               I am currently looking to SDE oportunities. If you want, you can
-              view my <a href="#">LinkedIn profile</a>, download my
-              <a href="#"> updated resume</a> or see my latest work.
+              view my{" "}
+              <a href={`${state.socialMediaLinks.linkedIn}`} target="_blank">
+                LinkedIn profile
+              </a>
+              , download my
+              <a href={`${state.socialMediaLinks.resume}`} target="_blank">
+                {" "}
+                updated resume
+              </a>{" "}
+              or see my latest work.
             </p>
             <p className="shortIntro__shortText">
               I also do competitive programming. I regularly practice on{" "}
-              <a href="#">LeetCode</a>,<a href="#"> CodeChef</a>,{" "}
-              <a href="#"> HackerRank</a>
+              <a href={`${state.socialMediaLinks.leetCode}`}>LeetCode</a>,
+              <a href={`${state.socialMediaLinks.codeChef}`}> CodeChef</a>,{" "}
+              <a href={`${state.socialMediaLinks.hackerRank}`}> HackerRank</a>
             </p>
           </div>
           <div className="shortIntro__right"></div>
