@@ -66,7 +66,7 @@ const AboutMe = () => {
               . I also do freelancing projects.
             </p>
             <p className="aboutMe__shortText">
-              Paralley, I'm trying to improve{" "}
+              Parallely, I'm trying to improve{" "}
               <span className="aboutMe__boldText">
                 competitive programming skills
               </span>{" "}

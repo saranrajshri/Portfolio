@@ -52,7 +52,14 @@ const ShortIntro = () => {
                 {" "}
                 updated resume
               </a>{" "}
-              or see my latest work.
+              or see my latest work in{" "}
+              <a
+                href={`${state.socialMediaLinks.github}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
             </p>
             <p className="shortIntro__shortText">
               I also do competitive programming. I regularly practice on{" "}
