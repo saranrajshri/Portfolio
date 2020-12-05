@@ -16,7 +16,7 @@ const Header = () => {
           <a href="/projects">Projects</a>
           <a href="/achievements">Achievements</a>
           <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="header__hamBurger">

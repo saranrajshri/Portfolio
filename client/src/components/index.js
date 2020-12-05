@@ -17,6 +17,9 @@ import AchievementsBanner from "./AchievementsPageComponents/Banner/Banner";
 import AchievementsList from "./AchievementsPageComponents/AchievementsList/AchievementsList";
 import SkillsList from "./AchievementsPageComponents/SkilsList/SkillsList";
 
+// Contact Page Components
+import ContactForm from "./ContactPageComponents/ContactForm/ContactForm";
+
 export {
   AboutMe,
   CenterBanner,
@@ -29,4 +32,5 @@ export {
   AchievementsBanner,
   AchievementsList,
   SkillsList,
+  ContactForm,
 };
