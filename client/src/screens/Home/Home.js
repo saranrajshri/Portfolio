@@ -11,6 +11,7 @@ import {
   ShortIntro,
 } from "../../components";
 import { Context } from "../../context/Context";
+import ChatBubble from "../../components/Global/ChatBubble/ChatBubble";
 
 const Home = () => {
   const [state] = useContext(Context);
@@ -41,6 +42,7 @@ const Home = () => {
         <AboutMe />
         <Footer />
       </motion.div>
+      <ChatBubble />
     </div>
   );
 };

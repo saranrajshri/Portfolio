@@ -1,0 +1,112 @@
+@import "../../../App.scss";
+
+.chatBubble__container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  //   border: 1px solid red;
+}
+
+.chatBubble__wrapper {
+  position: relative;
+}
+
+.chatBubble__circle {
+  margin-right: 2em;
+  margin-bottom: 2em;
+  height: 2em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2em;
+  border-radius: 50%;
+  background-color: var(--chatBubbleColor);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow: 0px 0px 15px 0.5px #888888;
+  padding: 1em;
+}
+
+.chatBubble__circle:hover {
+  box-shadow: 0px 0px 20px 0.5px #888888;
+  cursor: pointer;
+}
+
+.chatBubble__circle img {
+  width: 100%;
+}
+
+.chatBubble__chatBox {
+  height: 25em;
+  margin-right: 2em;
+}
+.chatBubble__chatBoxHeader {
+  text-align: center;
+  padding-right: 0.5em;
+  font-family: $poppinsSemiBold;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  box-shadow: 0px 0px 10px 0.5px #888888;
+
+  color: var(--white);
+  cursor: pointer;
+}
+.chatBubble__chatBoxMessages {
+  height: 100%;
+  padding-left: 0.4em;
+
+  border-top: 1px solid var(--blue);
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 10px 0.5px #888888;
+}
+
+.chatBubble__input {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.chatBubble__input input {
+  border: none;
+  border-top: 1px solid var(--grey);
+  outline: none;
+  width: 94.5%;
+  font-size: 16px;
+  padding: 8px;
+  background-color: var(--bg-color);
+  color: var(--black);
+}
+
+.chatBubble__messageLeft p {
+  background-color: #d35400;
+  width: 86%;
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 14px;
+  color: var(--white);
+  padding-left: 1em;
+}
+.chatBubble__messageRight p {
+  background-color: var(--green);
+  width: 86%;
+  text-align: right;
+  font-size: 14px;
+  border-radius: 1em;
+  padding: 0.5em;
+  padding-right: 1em;
+  color: var(--white);
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+  .chatBubble__circle {
+    display: none;
+  }
+  .chatBubble__chatBox {
+    display: none;
+  }
+}

@@ -9,6 +9,8 @@ html {
   --darkBlue: #2c3e50;
   --blue: #3579df;
   --pink: #f5a4be;
+  --chatBubbleColor: #2c3e50;
+  --green: #16a085;
 }
 
 // dark theme
@@ -18,6 +20,7 @@ html[data-theme="dark"] {
   --yellow: #16317b;
   --darkBlue: #9eb3cc;
   --pink: #661c29;
+  --chatBubbleColor: #2980b9;
 }
 
 @font-face {
