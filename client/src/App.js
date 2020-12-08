@@ -13,6 +13,7 @@ import Contact from "./screens/Contact/Contact";
 import Home from "./screens/Home/Home";
 import Projects from "./screens/Projects/Projects";
 import constants from "./constants/constants";
+import BlogIndex from "./screens/BlogIndex/BlogIndex";
 
 // Alert options
 const options = {
@@ -39,6 +40,7 @@ const App = () => {
               <Route path="/projects" exact component={Projects} />
               <Route path="/achievements" exact component={Achievements} />
               <Route path="/contact" exact component={Contact} />
+              <Route path="/blog" exact component={BlogIndex} />
             </Switch>
           </HashRouter>
         </Provider>

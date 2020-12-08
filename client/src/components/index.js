@@ -20,6 +20,10 @@ import SkillsList from "./AchievementsPageComponents/SkilsList/SkillsList";
 // Contact Page Components
 import ContactForm from "./ContactPageComponents/ContactForm/ContactForm";
 
+// Blog Index
+import BlogIndexBanner from "./BlogIndexPageComponents/Banner/BlogIndexBanner";
+import BlogList from "./BlogIndexPageComponents/BlogList/BlogList";
+
 export {
   AboutMe,
   CenterBanner,
@@ -33,4 +37,6 @@ export {
   AchievementsList,
   SkillsList,
   ContactForm,
+  BlogIndexBanner,
+  BlogList,
 };

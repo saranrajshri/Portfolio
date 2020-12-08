@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Context } from "../../../context/Context";
 import CustomDivider from "../../Global/CustomDivider/CustomDivider";
 
-import "./ProjectsList.scss";
+import "./BlogList.scss";
 
-const ProjectsList = () => {
+const BlogList = () => {
   const [state] = useContext(Context);
   const [showContent, setContentVisible] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
@@ -23,7 +23,6 @@ const ProjectsList = () => {
     }
     window.addEventListener("scroll", handleScroll, false);
   }, [lastYPos]);
-
   return (
     <div className="projectsList">
       <div className="projectsList__left"></div>
@@ -34,7 +33,7 @@ const ProjectsList = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: showContent ? 1 : 0 }}
-                transition={{ delay: 0.8, duration: 1 }}
+                transition={{ delay: 0.3, duration: 1 }}
               >
                 <div className="projectsListItem" key={index}>
                   <div className="project__title">
@@ -64,4 +63,4 @@ const ProjectsList = () => {
     </div>
   );
 };
-export default ProjectsList;
+export default BlogList;

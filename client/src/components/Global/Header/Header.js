@@ -28,7 +28,7 @@ const Header = () => {
           <a href="/#/">Home</a>
           <a href="/#/projects">Projects</a>
           <a href="/#/achievements">Achievements</a>
-          {/* <a href="/#/#">Blog</a> */}
+          <a href="/#/blog">Blog</a>
           <a href="/#/contact">Contact</a>
           <a href="/#">
             <Switch

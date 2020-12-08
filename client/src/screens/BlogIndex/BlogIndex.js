@@ -1,16 +1,10 @@
 import React, { useContext, useEffect } from "react";
-import { onPageLoadScrollTop } from "../../utils/utils";
-
-import {
-  AchievementsBanner,
-  AchievementsList,
-  Footer,
-  Header,
-  SkillsList,
-} from "../../components";
+import { BlogIndexBanner, BlogList, Footer, Header } from "../../components";
 import { Context } from "../../context/Context";
+import { onPageLoadScrollTop } from "../../utils/utils";
+import "./BlogIndex.scss";
 
-const Achievements = () => {
+const BlogIndex = () => {
   const [state] = useContext(Context);
   // Scroll Top
   useEffect(() => {
@@ -28,12 +22,11 @@ const Achievements = () => {
   return (
     <div>
       <Header />
-      <AchievementsBanner />
-      <AchievementsList />
-      <SkillsList />
+      <BlogIndexBanner />
+      <BlogList />
       <Footer delayDuration={0} />
     </div>
   );
 };
 
-export default Achievements;
+export default BlogIndex;
