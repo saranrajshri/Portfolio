@@ -8,14 +8,13 @@ const initialState = {
       ? localStorage.getItem("SET_DARK_MODE")
       : false,
   socialMediaLinks: {
-    resume:
-      "https://drive.google.com/file/d/1AaXBaAprcKtOsQ8GtZWoBXRYQ0fkHlBa/view?usp=sharing",
+    resume: "#",
     linkedIn: "http://linkedin.com/in/saranrajshri",
     github: "http://github.com/saranrajshri",
     leetCode: "https://leetcode.com/saranrajshri/",
     codeChef: "https://www.codechef.com/users/saranrajshri",
     hackerRank: "https://www.hackerrank.com/shrisaranraj",
-    email: "shrisaranraj2001@gmail.com",
+    email: "#",
   },
   projects: [
     {
